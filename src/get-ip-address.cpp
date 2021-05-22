@@ -191,9 +191,6 @@ namespace gmx
 
 GMX_EXPORT char* __cdecl gmx_get_local_ip_address()
 {
-	SetUnhandledExceptionFilter(UnhandledExceptionFilter);
-	int* a = nullptr;
-	*a = 10;
 	return gmx::GetLocalIPAddress();
 }
 
