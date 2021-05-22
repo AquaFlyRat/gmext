@@ -114,6 +114,7 @@ namespace gmx
 		}
 
 		static char output_string[4096] = {};
+		memset(output_string, 0, sizeof(output_string));
 
 		while (adapter)
 		{
