@@ -2,3 +2,5 @@ vs2019/.vs
 vs2019/Release
 vs2019/Debug
 vs2019/x64
+
+*.swp
