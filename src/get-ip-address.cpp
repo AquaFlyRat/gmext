@@ -163,14 +163,8 @@ namespace gmx
 
 					strcat(output_string, str);
 
-					if (i < mask.size() - 1)
-					{
-						strcat(output_string, ".");
-					}
-					else
-					{
-						strcat(output_string, "/");
-					}
+					const char* terminator = (i < mask.size() - 1) ? "." : "/";
+					strcat(output_string, terminator);
 				}
 
 				char str[16] = {};
